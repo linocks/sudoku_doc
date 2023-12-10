@@ -1,4 +1,4 @@
-# Nonogram Puzzle - Modupe
+# Sudoku Puzzle - Janet
 
 ## Problem Statement:
 Complete the implementation of the text-based user interface to include the (as yet unimplemented and therefore failed tests) 
