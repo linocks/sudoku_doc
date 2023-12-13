@@ -90,10 +90,10 @@ The file is stored in the format below, where the * by the number indicates that
 This enables me to distinguish computer generated values from user inputs.
 
 **Content of Saved file**
-4 -* 1 -*
-3* 2 -* -*
-2* -* 3 -*
-1* -* -* 1
+4 -* 1 -* <br/>
+3* 2 -* -* <br/>
+2* -* 3 -* <br/>
+1* -* -* 1 <br/>
 
 After saving the state of the puzzle, the confirmation dialogue pops up. See images below;
 ![save.JPG](sudoku_images%2Fsave.JPG)
