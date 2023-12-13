@@ -8,7 +8,7 @@ To design and implement a graphical user interface (GUI) for the Sudoku model co
 undo user moves, clear (reset) the game, save to, and load from file.
 
 ## How it was implemented:
-To complete the text based UI, three methods were added to the sudoku.java class:
+To complete the text based UI, seven methods were added to the sudoku.java class:
 1. saveGameToFile
 2. loadGameFromFile
 3. undo
@@ -39,12 +39,12 @@ The following methods were added to the MainGUI.java to complete the functionali
 4. getButtonColor()
 5. displayUserInterface()
 
-See MainGUI.java for the documentation of these methods
+See GUI.java for the documentation of these methods
 
 ___
 ### How to run the Puzzle:
 ___
-Open the project in your favourite IDE and run the MainTGUI.java file.
+Open the project in your favourite IDE and run the SudokuMain.java file.
 
 This will give you the option to select either the Graphical version or the text based version of
 the puzzle. You can now make moves by following the options in the text based UI or by entering the
