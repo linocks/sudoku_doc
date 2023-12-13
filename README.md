@@ -89,7 +89,7 @@ For the GUI, you're prompted with a window that enables you to specify the file 
 The file is stored in the format below, where the * by the number indicates that the input needs to come from the user.
 This enables me to distinguish computer generated values from user inputs.
 
-**Content of Saved file**
+**Content of Saved file** <br/>
 4 -* 1 -* <br/>
 3* 2 -* -* <br/>
 2* -* 3 -* <br/>
