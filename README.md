@@ -31,16 +31,6 @@ This panel contains the help, clear, undo, save and load buttons
 This is the main class that bootstraps the sudoku puzzle by displaying the various UI options.
 for the user to choose
 
-
-The following methods were added to the MainGUI.java to complete the functionality of the nongram game
-1. convertToVerticalString()
-2. formatRowCuesString()
-3. reset()
-4. getButtonColor()
-5. displayUserInterface()
-
-See GUI.java for the documentation of these methods
-
 ___
 ### How to run the Puzzle:
 ___
