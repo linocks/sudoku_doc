@@ -24,54 +24,45 @@ The Graphical User Interface of the Sudoku Game comprises ;
 2.  GUI.java
 
 ### ActionButtonPanel.java:
-This panel contains the help, clear, undo, save and load buttons
-
-
-### SudokuMain.java
-This is the main class that bootstraps the sudoku puzzle by displaying the various UI options.
-for the user to choose
+This panel contains the help, clear, undo, save, quit, and load buttons.
 
 ___
 ### How to run the Puzzle:
 ___
-Open the project in your favourite IDE and run the SudokuMain.java file.
+Open the project in your favourite IDE and run the GUI.java class for the Graphical User Interface or
+the UI.java class for the text-based version of the puzzle. 
 
-This will give you the option to select either the Graphical version or the text based version of
-the puzzle. You can now make moves by following the options in the text based UI or by entering the
+You can now make moves by following the options in the text-based UI or by entering the
 numbers into the input box on the Graphical User Interface.
 
-**NB: the computer generated inputs and grayed out and cannot be edited;**
+**NB: the computer-generated inputs and grayed out and cannot be edited;**
 
 
 ### Testing
 To test the functionality of the game, I added some JUnit tests to validate the correctness of the 
-make move methods which was already implemented.
+make move methods that were already implemented.
 I also wrote tests to validate the correctness of the following methods;
 1. getMoves
 2. getIndividualMove
 3. getGameSize
 4. readLevelFile
 5. isProgrammaticUpdate
-6. setProgrammaticUpdate
-7. checkWin
-8. makeMove
-9. saveGameToFile
-10. loadGameFromFile
-11. undo
-12. emptyCell
-13. clear
-14. resetHistory
+6. makeMove
+7. saveGameToFile
+8. loadGameFromFile
+9. undo
+10. emptyCell
+11. clear
+12. resetHistory
 
 See the sudoku.java class for the documentation of these methods
 
 To verify the functionality of the entire application, I tested the application against real inputs.
 
 Below are the steps that were taken. 
-I ran the SudokuMain.java and showed up the UI option screen as can be seen below;
-![ui-option.JPG](sudoku_images%2Fui-option.JPG)
 
-After clicking ok, you're presented with the 4X4 puzzle with the computer generated inputs grayed out and uneditable
-
+I ran the GUI.java pops up the 4X4 GUI puzzle with the compute-generated inputs grayed out and uneditable
+![4_4.JPG](sudoku_images%2F4_4.JPG)
 
 #### Action Button Tests
 1. Help Button test: To test the functionalities of the action buttons starting with the help button, I click on the help
@@ -80,14 +71,14 @@ which displayed the help window below;
 ![help.JPG](sudoku_images%2Fhelp.JPG)
 
 2. Save Button test: To test the functionality of the save button, I entered some numbers into the puzzle and 
-saved the state of the game to file. The text based UI creates a backup directory in the root
+saved the state of the game to file. The text-based UI creates a backup directory in the root
 of the application and stores the saved state as sudoku_backup.txt. This is set by default to reduce the burden of 
-selecting a location and file name when using the text based UI.
+selecting a location and file name when using the text-based UI.
 
 For the GUI, you're prompted with a window that enables you to specify the file name and location you want to save to.
 
 The file is stored in the format below, where the * by the number indicates that the input needs to come from the user.
-This enables me to distinguish computer generated values from user inputs.
+This enables me to distinguish computer-generated values from user inputs.
 
 **Content of Saved file** <br/>
 4 -* 1 -* <br/>
@@ -103,7 +94,7 @@ After saving the state of the puzzle, the confirmation dialogue pops up. See ima
 
 3. Load Button Test: To test the load functionality, press the L key to load the sudoku_backup.txt file.
 For the GUI, pressing the load button pops up the file window which enables you to browse to the location 
-of the file to load. You also should see  confirmation dialog when the file is loaded successfully 
+of the file to load. You also should see the confirmation dialog when the file is loaded successfully 
 
 See Image below
 ![load.JPG](sudoku_images%2Fload.JPG)
@@ -111,17 +102,21 @@ See Image below
 ![loaded.JPG](sudoku_images%2Floaded.JPG)
 
 
-4. Clear Button Test: Clicking on the clear button would prompt you to confirm your action. Upon confirming,
-all user inputs will be cleared leaving on the computer generated inputs. 
+4. Clear Button Test: Clicking on the clear button prompts you to confirm your action. Upon confirming,
+all user inputs will be cleared leaving on the computer-generated inputs. 
 
 ![reset.JPG](sudoku_images%2Freset.JPG)
 
 
-5. Quit Button Test: Clicking on the quit button would also prompt you for confirmation. Upon confirming, the 
-game will quit successfully.
+5. Quit Button Test: Clicking on the quit button prompts you for confirmation. Upon confirming, the 
+game will then quit successfully.
 
 ![quit.JPG](sudoku_images%2Fquit.JPG)
 
+6. Upon making all the right moves to complete the puzzle, you should see a pop-up confirming that you've solved the puzzle
+successfully as can be seen below;
+
+![solved.JPG](sudoku_images%2Fsolved.JPG)
 
 After testing the 4X4 puzzle, the difficult level was changed to hard (9X9) puzzle by changing the level and solution
 file in the sudoku.java class as can be seen below;
